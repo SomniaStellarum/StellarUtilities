@@ -8,9 +8,9 @@ import (
 var info *log.Logger
 
 func init() {
-	info = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime|log.Lshortfile)
+	info = log.New(os.Stdout, "INFO: ", log.Ldate|log.Ltime)
 }
 
-func InfoPrint(args... interface{}) {
+func InfoPrint(args ...interface{}) {
 	info.Println(args...)
 }
